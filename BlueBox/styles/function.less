@@ -1,0 +1,41 @@
+@color-white: #fff;
+@color-black: #000;
+@color-header: #e2e7ed;
+@color-web: #908ef3;
+@color-icon: #58d99c;
+@color-illustrations: #f4776d;
+@color-misc: #edca52;
+@color-footer: #31333e;
+@color-text: #626262;
+@color-blue: #00aeff;
+
+.sectionstart (@colorhex) {
+  display: grid;
+  background-color: @colorhex;
+  grid-template-columns: repeat(2, minmax(400px, 1fr));
+  grid-template-rows: 120px 480px;
+  align-items: center;
+  grid-column-gap: 40px;
+  grid-template-areas:
+      "header2 ."
+      "leftcoll rightcoll"
+}
+
+.sectionend (@colorhextwo) {
+  display: grid;
+  background-color: @colorhextwo;
+  grid-template-columns: 1fr;
+  grid-template-rows: 90px 440px 420px;
+  align-items: center;
+  justify-items: center;
+  grid-template-areas:
+          "header2"
+          "leftcoll"
+          "rightcoll"
+}
+
+.flexgap () {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
