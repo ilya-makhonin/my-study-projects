@@ -1,0 +1,70 @@
+@color-ipad-pres: #5d5d5d;
+@color-revier: #696161;
+@color-text: #848484;
+@color-footer: #393a39;
+@color-bg-link: #373737;
+@color-navbar: #323332;
+@color-button: #bb4465;
+
+.mainfunction () {
+  width: 230px;
+  display: flex;
+  flex-direction: column;
+  color: @color-text;
+  margin-bottom: 60px;
+  margin-top: 26px;
+}
+
+.buyfunction (){
+  width: 270px;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+  background-color: @color-footer;
+  color: white;
+}
+
+.animationipad () {
+    animation-name: pictur;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+
+@keyframes pictur {
+  from {opacity: 0;}
+  25% {opacity: 0.25;}
+  50% {opacity: 0.5;}
+  75% {opacity: 0.75;}
+  to {opacity: 1;}
+}
+
+@keyframes buyblockanimationleft {
+  from {opacity: 0;
+    margin-right: 350px;
+  }
+
+  15% {opacity: 0.2;
+    margin-right: 320px;
+  }
+
+  30% {opacity: 0.4;
+    margin-right: 290px;
+  }
+
+  45% {opacity: 0.6;
+    margin-right: 250px;
+  }
+  60% {opacity: 0.8;
+    margin-right: 210px;
+  }
+
+  75% {opacity: 1;
+    margin-right: 170px;
+  }
+
+  90% {margin-right: 130px}
+
+  to {margin-right: 80px;}
+}

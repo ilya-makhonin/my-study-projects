@@ -1,0 +1,49 @@
+@keyframes pictur {
+  from {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes buyblockanimationleft {
+  from {
+    opacity: 0;
+    margin-right: 350px;
+  }
+  15% {
+    opacity: 0.2;
+    margin-right: 320px;
+  }
+  30% {
+    opacity: 0.4;
+    margin-right: 290px;
+  }
+  45% {
+    opacity: 0.6;
+    margin-right: 250px;
+  }
+  60% {
+    opacity: 0.8;
+    margin-right: 210px;
+  }
+  75% {
+    opacity: 1;
+    margin-right: 170px;
+  }
+  90% {
+    margin-right: 130px;
+  }
+  to {
+    margin-right: 80px;
+  }
+}

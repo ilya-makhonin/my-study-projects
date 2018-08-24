@@ -1,0 +1,331 @@
+@import "function";
+
+* {
+  margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.present, header, main, .buy, footer {
+  width: 1300px;
+  padding-left: 85px;
+  box-sizing: border-box;
+}
+
+header {
+  padding-top: 40px;
+  height: 120px;
+  border-bottom: 1px solid @color-text;
+
+  .logo {
+    width: 232px;
+    height: 48px;
+    background-image: url("img/mb-logo.png");
+    float: left;
+    margin-left: 10px;
+  }
+
+  nav {
+    float: right;
+    margin-right: 170px;
+    margin-top: 20px;
+
+    li {
+      display: inline;
+      margin-left: 45px;
+
+      a {
+        font-size: 23px;
+        text-decoration: none;
+        color: @color-navbar;
+        padding: 8px 15px;
+      }
+
+      a:hover {
+        background-color: @color-footer;
+        color: #fff;
+      }
+    }
+  }
+}
+
+.present {
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .ipad-video {
+    float: left;
+    color: #5d5d5d;
+    margin-left: 0;
+
+    h1 {
+      font-size: 60px;
+      font-weight: 300;
+    }
+
+    h2 {
+      font-size: 47px;
+      font-weight: 300;
+      line-height: 1.5;
+    }
+
+    a {
+      font-size: 23px;
+      display: flex;
+      align-items: center;
+      width: 200px;
+      height: 42px;
+      background: #373737;
+      margin: 0;
+      color: white;
+      text-decoration: none;
+      
+      .icon-video-present {
+        width: 33px;
+        height: 17px;
+        margin: 0 10px;
+        background: url("img/video-icon-link.png");
+        float: left;
+      }
+    }
+  }
+
+  img {
+    margin-right: 0;
+    .animationipad ();
+  }
+}
+
+main {
+  display: grid;
+  grid-template-columns: 800px 330px;
+  grid-gap: 30px;
+}
+
+.desc-ipad {
+  article {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 0;
+    border: 1px solid @color-text;
+    border-radius: 6px;
+
+    img {
+      margin-left: 20px;
+      margin-right: 25px;
+    }
+
+    .block-right {
+      color: @color-text;
+      box-sizing: border-box;
+      padding-right: 20px;
+      padding-left: 10px;
+
+      h3 {
+        font-size: 30px;
+        margin-bottom: 15px;
+        font-weight: 400;
+      }
+
+      p {
+        text-align: justify;
+      }
+    }
+  }
+}
+
+.ipad-review {
+  display: flex;
+  flex-direction: row;
+
+  .apple-iphone, .standart-chunk, .book-is-one {
+    .mainfunction ();
+
+    article {
+      margin-bottom: 50px;
+
+      h3 {
+        font-size: 26px;
+        margin-bottom: 10px;
+        font-weight: 200;
+      }
+
+      p {
+        font-size: 14px;
+      }
+    }
+
+    article  p:last-child {
+      margin-top: 10px;
+    }
+  }
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+
+  .week {
+    position: relative;
+    z-index: 0;
+
+    img {
+      position: relative;
+      z-index: 1;
+    }
+
+    a {
+      position: absolute;
+      z-index: 2;
+      right: 70px;
+      top: 250px;
+    }
+  }
+
+  .form-site {
+    width: 320px;
+    height: 265px;
+    margin-top: 25px;
+    background: @color-footer;
+    color: white;
+    border-bottom: 10px solid @color-button;
+
+    h3 {
+      font-size: 30px;
+      font-weight: 300;
+      text-align: center;
+      text-transform: uppercase;
+      margin: 20px 0;
+    }
+
+    p {
+      box-sizing: border-box;
+      padding: 0 28px;
+      text-align: justify;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 12px;
+
+      .form-block {
+        width: 280px;
+        height: 22px;
+        margin-bottom: 12px;
+        outline: none;
+      }
+
+      .button {
+        width: 180px;
+        height: 30px;
+        background: @color-button;
+        color: white;
+        outline: none;
+        border-radius: 6px;
+        border: 1px solid @color-button;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+.buy {
+  h2 {
+    color: @color-revier;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 400;
+    margin: 0 0 50px 0;
+  }
+
+  .purchase-option {
+    display: flex;
+    flex-direction: row;
+
+    .ipad-buy, .iphone-buy, .imac-buy {
+      .buyfunction ();
+
+      h3 {
+        font-size: 24px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-weight: 300;
+      }
+
+      img {
+        width: 250px;
+        height: 250px;
+        margin-bottom: 10px;
+        border-radius: 8px;
+      }
+
+      ul {
+        position: relative;
+        list-style-position: outside;
+        right: 10px;
+        margin-bottom: 10px;
+      }
+
+      a {
+        display: block;
+        width: 170px;
+        height: 24px;
+        color: @color-revier;
+        text-align: center;
+        padding-top: 2px;
+        background: white;
+        border-radius: 6px;
+        text-decoration: none;
+        margin-bottom: 10px;
+      }
+    }
+
+    .ipad-buy {
+      animation-name: buyblockanimationleft;
+      animation-duration: 3s;
+      animation-delay: 3s;
+      animation-timing-function: linear;
+    }
+
+    .iphone-buy {
+      animation-name: pictur;
+      animation-duration: 3s;
+      animation-delay: 3s;
+      animation-timing-function: linear;
+    }
+
+    .imac-buy {
+      animation-name: pictur;
+      animation-duration: 3s;
+      animation-delay: 3s;
+      animation-timing-function: linear;
+    }
+  }
+}
+
+footer {
+  background: @color-footer;
+  height: 100px;
+
+  .link {
+    float: left;
+    margin-top: 40px;
+    margin-left: 400px;
+
+    p {
+      color: white;
+    }
+  }
+
+  .social-icon {
+    float: right;
+    margin: 40px 30px 0 0;
+
+   /* a:hover {
+
+    }*/
+  }
+}
