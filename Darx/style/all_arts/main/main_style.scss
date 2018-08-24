@@ -1,0 +1,84 @@
+@import "../reformiert/funktion";
+
+.main_portfolio {
+  margin: 0 auto;
+  width: 962px;
+  box-sizing: border-box;
+  padding: 30px 0 124px;
+  @include flex-box(row, flex-start);
+  background: url("../../img/back.png");
+}
+
+.bilder {
+  width: 472px;
+}
+
+.bilder_oben-vier {
+  height: 440px;
+  @include flex-box(row, space-between);
+  margin-bottom: 15px;
+}
+
+.bilder_oben-drei {
+  height: 440px;
+  @include flex-box(column, space-between);
+  margin-bottom: 15px;
+}
+
+.bilder_unten-zusammen {
+  height: 680px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.bilder__nach-oben_linke {
+  height: 212px;
+  @include flex-box(row, baseline);
+  margin-bottom: 15px;
+}
+
+.bilder__unten_unterer-linke {
+  height: 448px;
+  @include flex-box(column, space-between);
+  margin-bottom: 15px;
+}
+
+.bilder__nach-oben_recht {
+  height: 212px;
+  margin-bottom: 12px;
+}
+
+.bilder__unten_unterer-winkel {
+  height: 441px;
+  @include flex-box(row, space-between);
+}
+
+.bilder__kleines-quadrat:hover, .bilder__grosen-quadrat:hover {
+  opacity: 0.7;
+}
+
+.bilder__kleines-quadrat_portfolio {
+  width: 230px;
+  height: 212px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 7px 12px;
+  background: url("../../img/text_block/back.png");
+}
+
+.bilder__inhalt_style {
+  font-size: 24px;
+  color: $color-dark-text;
+  font-style: italic;
+  box-sizing: border-box;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.grosen-11 {
+  width: 472px;
+}

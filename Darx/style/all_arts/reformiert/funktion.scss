@@ -1,0 +1,18 @@
+$back-header: #1b1b1c;
+$color-logotype: #2096da;
+$color-acktiv: #2096da;
+$text-text: #ffffff;
+$color-dark-text: #818182;
+$color-border: #2096da;
+$back-footer: #1b1b1c;
+$back-input: #272727;
+$back-button: #252626;
+$footer-down: #2096da;
+
+@mixin flex-box ($dir, $alig-con) {
+  display: flex;
+  flex-direction: $dir;
+  justify-content: space-between;
+  align-content: $alig-con;
+  flex-wrap: wrap;
+}

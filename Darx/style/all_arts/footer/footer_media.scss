@@ -1,0 +1,26 @@
+@import "../reformiert/funktion";
+
+@media all and (max-width: 1000px) {
+  .footer {
+    width: 100%;
+
+    .footer__soziale-symbole {
+      width: 96%;
+      @include flex-box(row, center);
+      justify-content: center;
+    }
+
+    .footer__hauptinhalt {
+      width: 100%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .footer__keller {
+      min-height: 50px;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+}

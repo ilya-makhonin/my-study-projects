@@ -1,0 +1,9 @@
+@media all and (max-width: 1000px){
+  .main_portfolio {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+}

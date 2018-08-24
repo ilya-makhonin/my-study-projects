@@ -1,0 +1,196 @@
+@import "../reformiert/funktion";
+
+.footer {
+  width: 962px;
+  background: $back-footer;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer_portfolio {
+  margin: 0 auto;
+}
+
+.footer__soziale-symbole {
+  width: 960px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer__soziale-symbole_position {
+  position: relative;
+  top: -60px;
+  left: 1px;
+}
+
+.footer__soziale-hinweis {
+  text-decoration: none;
+  display: block;
+  border-radius: 60px;
+}
+
+.footer__soziale-image {
+  border-radius: 52px;
+}
+
+.footer__soziale-image:hover {
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: inset -10px -10px 10px #fff,inset 10px 10px 10px #fff;;
+}
+
+.footer__hauptinhalt {
+  width: 962px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer__hauptinhalt_position {
+  position: relative;
+  top: -30px;
+}
+
+.footer__hauptinhalt-abschnitt {
+  width: 272px;
+  height: 238px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.footer__hauptinhalt-leiter {
+  color: $text-text;
+  font-size: 18px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.footer__hauptinhalt-galerie {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.footer__hauptinhalt_margin {
+  margin-bottom: 20px;
+}
+
+.footer__hauptinhalt-kommentar {
+  height: 158px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer__hauptinhalt-instanz_style {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer__hauptinhalt-nachricht_margin {
+  margin-left: 15px;
+}
+
+.footer__hauptinhalt-nachricht-header {
+  font-size: 14px;
+  font-weight: 300;
+  color: $text-text;
+}
+
+.footer__hauptinhalt-nachricht-icon {
+  width: 13px;
+  height: 12px;
+  background: url("../../img/comments.png");
+}
+
+.footer__hauptinhalt-nachricht-icon {
+  margin-right: 8px;
+}
+
+.footer__hauptinhalt-nachricht-hinweis {
+  color: $color-dark-text;
+  font-size: 11px;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.footer__hauptinhalt-nachricht-hinweis:hover {
+  text-decoration: underline;
+}
+
+.footer__hauptinhalt-nachricht-hinweis_margin {
+  margin-top: 10px;
+}
+
+.footer__hauptinhalt-formular {
+  width: 262px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.footer__hauptinhalt-formular_margin {
+  margin-right: 8px;
+}
+
+.footer__hauptinhalt-eingabe {
+  width: 260px;
+  height: 36px;
+  background: $back-input;
+  color: $text-text;
+  box-sizing: border-box;
+  padding-left: 8px;
+  outline: none;
+  border: none;
+}
+
+.footer__hauptinhalt-senden {
+  width: 98px;
+  height: 40px;
+  background: $back-button;
+  text-transform: uppercase;
+  outline: none;
+  border: none;
+  color: $text-text;
+  font-weight: 600;
+}
+
+.footer__hauptinhalt-senden:hover {
+  box-shadow: -1px -1px 1px  1px rgba(255, 255, 255, 0.5), 1px 1px 1px 1px rgba(255, 255, 255, 0.5);
+}
+
+.footer__keller {
+  height: 26px;
+  background: $footer-down;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer__navigation-absatz {
+  display: inline;
+}
+
+.footer__navigation-absatz_margin {
+  margin-right: 10px;
+}
+
+.footer__navigation-hinweis {
+  text-decoration: none;
+  color: $text-text;
+  text-transform: uppercase;
+}
+
+.footer__kopieren {
+  font-size: 12px;
+  color: $text-text;
+}
